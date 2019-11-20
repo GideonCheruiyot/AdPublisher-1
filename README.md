@@ -55,5 +55,5 @@ I used Flask to write the backend for the Web App.
 MySQL database. 
 
 ### Web App Frontend
-I used a mix of HTML, Bootstrap and Javascript for the user to enter values to run a Facebook campaign.
+I used a mix of HTML and Bootstrap for the user to enter values to run a Facebook campaign.
 
