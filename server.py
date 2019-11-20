@@ -46,7 +46,7 @@ def index():
         mycursor.execute("INSERT INTO adsData (campaign_name, location, age_min, age_max, ad_name, Gender) VALUES (%s, %s, %s, %s, %s, %s)", (campaign_name, location, demographics_age_min, demographics_age_max, ad_name, gender))
         mydb.commit()
      
-        access_token = 'EAAIA2D5EZA7kBAP8WL0GPIvAvhaBRgxytARWFat7FkcqFOnyFFIWgQBGY2CmvDe2qZBIVEl98lh6iArZBbEyEFqTwHkbKXXpOkmZCdp6z53SKaTOiiML8bVfwPV3EfWGwh6ttnx8TvTpOE8d9EQAbIC4ZAbyZB6Fck0DTb6nXTQ2iJ0vqzPPbcswfyunTq0dKAzlVdYRuyvQZDZD'
+        access_token = 'EAAIA2D5EZA7kBAOwlqaopB0cHVDUV3KZA4mGLzxKqVdMtBjZCZBKpaErd19PRZCcshdLSdAgPuMZCelG7N2VU3c65pl99eZA00IrdzZBrdBPbI9IiCeDrqT6Wj057c9ARsbOVqZARxWuBkBWSt1W2GOj3hmxvTzCDJLLFG2OOl6yHOIJDskM3tj7eHIfF9ZADXocWeyYfEOyIwzQZDZD'
         app_secret = '6ce7390fe1cd13d86c41474627d6b650'
         app_id = '563878711027641'
         ad_account_id = 'act_215421109'
@@ -80,7 +80,10 @@ def index():
             'optimization_goal': 'REACH',
             'bid_amount': 10,
             'targeting': {'geo_locations': {'countries': location},
-                          'publisher_platforms': 'facebook'},
+                        "age_min": demographics_age_min,
+                        "age_max": demographics_age_max,
+                        'publisher_platforms': 'facebook'
+                          },
             'start_time': start_time,
             'end_time': end_time,
         })
