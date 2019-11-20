@@ -14,7 +14,7 @@ Here is the page view:
 <img src="src/image2_sql.png" width="550" height ="275"><br><br>
 
 ## Ad Manager View
-<img src="src/AdManager.png" width="550" height ="275"><br><br>
+<img src="src/image3_AdManager.png" width="550" height ="275"><br><br>
 
 
 
