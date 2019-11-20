@@ -9,7 +9,7 @@ Here is the page view:
 
 ## Ad Publisher Homepage
 
-<img src="src/Image1.png" width="500" height ="275"><br><br>
+<img src="src/image1.png" width="500" height ="275"><br><br>
 
 # How to run
 - First, install all the requirements needed from the requirements.txt file
