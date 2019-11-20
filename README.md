@@ -10,9 +10,8 @@ Here is the page view:
 ## Ad Publisher Homepage
 <img src="src/image1_adPublisher.png" width="550" height ="275"><br><br>
 
-## SQL Page View
+## SQL View
 <img src="src/image2_sql.png" width="550" height ="275"><br><br>
-
 
 ## Ad Manager View
 <img src="src/AdManager.png" width="550" height ="275"><br><br>
