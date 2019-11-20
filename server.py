@@ -46,10 +46,10 @@ def index():
         mycursor.execute("INSERT INTO adsData (campaign_name, location, age_min, age_max, ad_name, Gender) VALUES (%s, %s, %s, %s, %s, %s)", (campaign_name, location, demographics_age_min, demographics_age_max, ad_name, gender))
         mydb.commit()
      
-        access_token = 'EAAIA2D5EZA7kBAOwlqaopB0cHVDUV3KZA4mGLzxKqVdMtBjZCZBKpaErd19PRZCcshdLSdAgPuMZCelG7N2VU3c65pl99eZA00IrdzZBrdBPbI9IiCeDrqT6Wj057c9ARsbOVqZARxWuBkBWSt1W2GOj3hmxvTzCDJLLFG2OOl6yHOIJDskM3tj7eHIfF9ZADXocWeyYfEOyIwzQZDZD'
-        app_secret = '6ce7390fe1cd13d86c41474627d6b650'
-        app_id = '563878711027641'
-        ad_account_id = 'act_215421109'
+        access_token = 'REPLACE WITH ACCESS TOKEN'
+        app_secret = 'REPLACE WITH APP SECRET'
+        app_id = 'REPLACE WITH APP ID'
+        ad_account_id = 'REPLACE WITH APP ID ACCOUNT'
         page_id = 113893613377855
         FacebookAdsApi.init(access_token=access_token)
          
