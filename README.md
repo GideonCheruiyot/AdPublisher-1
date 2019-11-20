@@ -8,7 +8,6 @@ Here is the page view:
 
 
 ## Ad Publisher Homepage
-
 <img src="src/image1_adPublisher.png" width="500" height ="275"><br><br>
 
 ## SQL Page View
