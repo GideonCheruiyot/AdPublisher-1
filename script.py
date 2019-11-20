@@ -8,11 +8,11 @@ import datetime
 from facebook_business.adobjects.adset import AdSet
 from facebook_business.adobjects.adimage import AdImage
 
-access_token = 'EAAIA2D5EZA7kBAEpvrvTxGwmGfwE2qZBqN7KU42amzYFwiF9FTJ2eVVtg459RoqiZALuZAFURAEV4VlPQNvFxkcoZCZBjtNGAkz9XZAn9gz5P6FcWzUWbywnxHZCki6L8Wz7MEeLjE5dUnjfcPjMpZAOfscmUZCExxMMVMZC4tHp1l8h2aUNt0O4mar2jAo63BAHIwZD'
+access_token = 'EAAIA2D5EZA7kBAJmUlFReIeuUZBVucx7dAaU3mTwjDuyvN9ZAvuvivm5UEeytPbFyup7Xm1b2kEVogvtIWUCMVC6Buq7K3CR4G1wV1wjBYTpViYJJhMmWlNFZBP3SScPTXo4ipBIF5d25CCBT9Fr1vslix7f1HqvNj74Fx3862RnKhbsJJydY41MzjzLZBXQdWGuuuqgRSNg5Q2ArJtpZA0WMtTGf2rlHRSZCZA92tuZB9gZDZD'
 app_secret = '6ce7390fe1cd13d86c41474627d6b650'
 app_id = '563878711027641'
 ad_account_id = 'act_215421109'
-page_id = ''
+page_id = '113893613377855'
 FacebookAdsApi.init(access_token=access_token)
  
 
@@ -21,8 +21,10 @@ params = {
     'name': 'campaign_name',
     'objective': 'POST_ENGAGEMENT',
     'status': 'ACTIVE',
-    'special_ad_category': 'CREDIT',
+    'special_ad_category': 'NONE',
 }
+
+
 
 campaign_result = AdAccount(ad_account_id).create_campaign(params=params)
 print(campaign_result)
@@ -72,12 +74,13 @@ fields = [
 ]
 params = {
   'name': 'creative__name',
-  'object_story_spec': {'page_id':113893613377855 ,'link_data':{'image_hash':image_hash,'link':'https://www.facebook.com/TechTutor-113893613377855/?modal=admin_todo_tour','message':'ad here'}},
+  'object_story_spec': {'page_id': page_id,'link_data':{'image_hash':image_hash,'link':'https://www.facebook.com/TechTutor-113893613377855/?modal=admin_todo_tour','message':'ad here'}},
 }
 adcreative = AdAccount(ad_account_id).create_ad_creative(fields=fields, params=params)
 
 fields = [
 ]
+
 params = {
   'name': 'ad__name',
   'adset_id': adset['id'],
