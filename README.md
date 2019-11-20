@@ -1,7 +1,7 @@
 # AdPublisher
 script + web app to publish Facebook ads
 
-This ad publisher allows the user to enter some details that will then run a targeted facebook campaign. Some of the details required are Campaign Name, Ad image and Creative Name. For targeting, the code can be custom made to target specific demographics, gender and age group.
+This ad publisher allows the user to enter some details that will then run a targeted facebook campaign. Some of the details required are Campaign Name, Ad image and Creative Name. For targeting, the code can be custom made to target specific demographics, gender and age group. The details will then populate a MySQL database to keep records.
 
 
 Here is the page view:
