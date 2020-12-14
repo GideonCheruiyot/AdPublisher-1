@@ -24,7 +24,7 @@ Once the app is running, you can check on the ads Manager every time the form is
 mydb = mysql.connector.connect(
     host = "localhost",
     user = "root",
-    passwd = "Gideon12",
+    passwd = "***",
     database = "FacebookAds"
 )
 
